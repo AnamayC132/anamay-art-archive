@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'art/automobile', component: ArtCategoryComponent },
   { path: 'art/caricatures', component: ArtCategoryComponent },
   { path: 'art/doodles', component: ArtCategoryComponent },
-  { path: 'art/abstract', component: ArtCategoryComponent },
+  { path: 'art/creative', component: ArtCategoryComponent },
   { path: 'art/posters', component: ArtCategoryComponent },
   { path: 'art/portraits', component: ArtCategoryComponent },
 

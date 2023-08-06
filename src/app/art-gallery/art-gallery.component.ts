@@ -20,7 +20,7 @@ export class ArtGalleryComponent implements OnInit {
     this.pages.set("Doodles", "adb");
     this.pages.set("Portraits", "face");
     this.pages.set("Posters", "movie");
-    this.pages.set("Abstract", "extension");
+    this.pages.set("Creative", "extension");
 
     this.router.events.subscribe((event: Event) => {
 

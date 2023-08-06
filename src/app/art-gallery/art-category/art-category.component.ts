@@ -28,7 +28,9 @@ url:string;
   caricaturesUrl: string[] = ["assets/caricatures/pup.jpg", "assets/caricatures/vote.jpg"]
   doodlesUrl: string[] = ["assets/doodles/do1.jpg", "assets/doodles/do2.jpg", "assets/doodles/do3.jpg"]
 
-  portraitsUrl: string[] = ["assets/portraits/colorGirl.jpg","assets/portraits/colorGirl1.jpg",
+  portraitsUrl: string[] = ["assets/portraits/SRK.jpg","assets/portraits/a5.jpg","assets/portraits/kim.jpg",
+  "assets/portraits/b4.jpg","assets/portraits/Mummy.jpg",
+  "assets/portraits/Papa.jpg","assets/portraits/colorGirl.jpg","assets/portraits/colorGirl1.jpg",
   "assets/portraits/colorGirl2.jpg","assets/portraits/an1.jpg", "assets/portraits/dt1.jpg", "assets/portraits/dt2.jpg",
     "assets/portraits/dt3.jpg", "assets/portraits/dt4.jpg", "assets/portraits/dt5.jpg", "assets/portraits/hr1.jpg",
     "assets/portraits/hr2.jpg", "assets/portraits/ks.jpg", "assets/portraits/ni3.jpg", "assets/portraits/pa1.jpg",
@@ -37,17 +39,19 @@ url:string;
     "assets/portraits/um2.jpg", "assets/portraits/um3.jpg"]
   postersUrl: string[] = ["assets/posters/go1.jpg", "assets/posters/go2.jpg", "assets/posters/go3.jpg",
     "assets/posters/ra1.jpg", "assets/posters/raees.jpg"]
-  abstractUrl: string[] = ["assets/random/juari.jpg", "assets/random/love.jpg", "assets/random/ma1.jpg",
+  creativeUrl: string[] = ["assets/random/ap.jpg","assets/random/pik.jpg",
+  "assets/random/al4.jpg","assets/random/hr.jpg",
+  "assets/random/juari.jpg", "assets/random/love.jpg", "assets/random/ma1.jpg",
     "assets/random/ma2.jpg", "assets/random/pa1.jpg", "assets/random/tower.jpg"]
 
   ngOnInit(): void {
 
-    this.artMap.set("automobileUrl", this.automobileUrl);
+    this.artMap.set("automobileUrl", this.automobileUrl);     
     this.artMap.set("postersUrl", this.postersUrl);
     this.artMap.set("portraitsUrl", this.portraitsUrl);
     this.artMap.set("caricaturesUrl", this.caricaturesUrl);
     this.artMap.set("doodlesUrl", this.doodlesUrl);
-    this.artMap.set("abstractUrl", this.abstractUrl);
+    this.artMap.set("creativeUrl", this.creativeUrl);
 
     for (var key of this.artMap) {
       if (key[0].startsWith(this.currentRoute)) {
